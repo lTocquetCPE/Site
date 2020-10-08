@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  border-style: solid;
+}
+
+.logoDiv {
+  height: 90%;
+}
+
+.logoDiv img {
+  height: 90%;
+  width: 100%;
+}
+
+.headerButton {
+  height: 100%;
+  border-style: solid;
+  text-align: center;
+}
+.headerButton img {
+  width: 200px;
+  height: 200px;
+}
+
+.rightHeaderButtons {
+  width: 100%;
+  display: flex;
+  border-style: groove;
+  flex-direction: row;
+  float: left;
+}
+.content {
+}
