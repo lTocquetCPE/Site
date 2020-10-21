@@ -9,8 +9,10 @@ header {
   display: flex;
   flex-direction: row;
   border: 1px;
-  border-style: solid;
   background-color: #fbf1e3;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .logoDiv {
@@ -44,4 +46,150 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  text-decoration: none;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  border-style: solid;
+  background-color: #fbf1e3;
+}
+
+.logoDiv img {
+  height: 100%;
+  width: 180%;
+}
+
+.headerButton {
+  padding-right: 40px;
+  padding-left: 40px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  color: #00c2cb;
+}
+.headerButton img {
+  width: 150px;
+  height: 150px;
+}
+
+.rightHeaderButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+body {
+  background-color: #fbf1e3;
+}
+.travelInfo {
+  display: grid;
+  border: solid;
+  border-radius: 10px;
+  background-color: #d9fbfc;
+  padding: 20px;
+  font-size: 25px;
+  margin: 25px;
+
+  margin: 15px;
+  box-sizing: border-box;
+  font-size: 45px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.travelInfoRightSide {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.travelInfoLeftSide {
+  grid-column: 1/2;
+  grid-row: 1;
+  align-items: stretch;
+}
+
+.travelInfoRightSide img {
+  height: 1000px;
+  width: 100%;
+  padding: 15px;
+}
+
+.mainTravelInfo {
+  display: flex;
+  width: auto;
+}
+.mainTravelInfoTop {
+  width: 100%;
+}
+.travelInfo h1 {
+  line-height: 0;
+  font-size: 70px;
+}
+.travelInfo h2 {
+  font-size: 45px;
+}
+.travelInfoTemperature {
+  font-size: 70px;
+  text-align: end;
+  border: solid;
+  margin: auto;
+}
+
+.travelInfo h3 {
+  font-size: 40px;
+}
+
+.bookingForm {
+  margin: 25px;
+  font-size: 25px;
+}
+
+.buttonsSpan button {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 1000px;
+  text-align: center;
+  font-size: 25px;
+  margin: auto;
+  vertical-align: middle;
+
+  margin: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  font-size: 45px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+
+footer {
+  text-decoration: none;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  background-color: #fbf1e3;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
 }

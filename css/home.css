@@ -9,8 +9,10 @@ header {
   display: flex;
   flex-direction: row;
   border: 1px;
-  border-style: solid;
   background-color: #fbf1e3;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .logoDiv {
@@ -46,57 +48,89 @@ header {
   justify-content: right;
 }
 
-body{
-    background-color: #fbf1e3;
+body {
+  background-color: #fbf1e3;
 }
-h1{
-    color: #00c2cb;
-    font-size: 50px;
+h1 {
+  color: #00c2cb;
+  font-size: 50px;
 }
-h2{
+h2 {
   color: black;
   font-size: 50px;
 }
-h3{
-    color: #737373;
+h3 {
+  color: #737373;
 }
-p{
-    color: #737373;
+p {
+  color: #737373;
 }
-.destination img{
-    border-radius: 50%;
-    object-fit: cover;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
+.destination img {
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
-span.destination{
-    margin: 15px;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 570px;
-    padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+span.destination {
+  margin: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 570px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
-div.image{
+div.image {
   position: relative;
 }
-div.reservez{
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+div.reservez {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-span.destination:hover .image{
+span.destination:hover .image {
   opacity: 0.3;
 }
-span.destination:hover .reservez{
+span.destination:hover .reservez {
   opacity: 1;
+}
+
+footer {
+  text-decoration: none;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  background-color: #fbf1e3;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+
+
+footer {
+  text-decoration: none;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  background-color: #fbf1e3;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
 }
