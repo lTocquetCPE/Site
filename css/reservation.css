@@ -45,5 +45,71 @@ header {
   flex-direction: row;
   justify-content: right;
 }
-.content {
+body {
+  background-color: #fbf1e3;
+}
+.travelInfo {
+  display: grid;
+  border: solid;
+  border-radius: 10px;
+  background-color: #d9fbfc;
+  padding: 20px;
+  font-size: 25px;
+  margin: 25px;
+}
+
+.travelInfoRightSide {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.travelInfoLeftSide {
+  grid-column: 1/2;
+  grid-row: 1;
+  align-items: stretch;
+}
+
+.travelInfoRightSide img {
+  height: 1000px;
+  width: 100%;
+}
+
+.mainTravelInfo {
+  display: flex;
+  width: auto;
+}
+.mainTravelInfoTop {
+  width: 100%;
+}
+.travelInfo h1 {
+  line-height: 0;
+  font-size: 70px;
+}
+.travelInfo h2 {
+  font-size: 45px;
+}
+.travelInfoTemperature {
+  font-size: 70px;
+  text-align: end;
+  border: solid;
+  margin: auto;
+}
+
+.travelInfo h3 {
+  font-size: 40px;
+}
+
+.bookingForm {
+  margin: 25px;
+  font-size: 25px;
+}
+
+.buttonsDiv button {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 1000px;
+  text-align: center;
+  font-size: 25px;
+  margin: auto;
 }
