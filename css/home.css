@@ -45,13 +45,19 @@ header {
   flex-direction: row;
   justify-content: right;
 }
+
 body{
     background-color: #fbf1e3;
 }
 h1{
     color: #00c2cb;
+    font-size: 50px;
 }
 h2{
+  color: black;
+  font-size: 50px;
+}
+h3{
     color: #737373;
 }
 p{
@@ -59,16 +65,38 @@ p{
 }
 .destination img{
     border-radius: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 span.destination{
+    margin: 15px;
     display: inline-block;
     box-sizing: border-box;
-    height: 500px;
-    width: 30%;
+    width: 570px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+}
+div.image{
+  position: relative;
+}
+div.reservez{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+span.destination:hover .image{
+  opacity: 0.3;
+}
+span.destination:hover .reservez{
+  opacity: 1;
 }

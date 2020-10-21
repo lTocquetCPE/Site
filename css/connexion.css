@@ -45,3 +45,11 @@ header {
   flex-direction: row;
   justify-content: right;
 }
+body{
+  background-color: #fbf1e3;
+}
+h1{
+  color: #00c2cb;
+  font-size: 50px;
+  text-align: center;
+}
