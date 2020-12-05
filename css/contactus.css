@@ -17,10 +17,6 @@ header {
   text-align: center;
 }
 
-
-.logoDiv {
-}
-
 .logoDiv img {
   height: 100%;
   width: 180%;
@@ -49,6 +45,50 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: right;
+}
+
+.apropos{
+  margin-left: 50px;
+}
+
+.contact{
+  margin-left: 50px;
+}
+
+h1{
+  color: #00c2cb;
+}
+
+h2{
+  color: #737373;
+}
+
+p{
+  margin-left: 20px;
+}
+
+form{
+  margin-left: 20px;
+}
+
+.txtForm{
+  width: 15%;
+  margin-top: 10px;
+}
+
+.form{
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  border-radius: 6px;
+}
+
+.button{
+  background-color: #fbf1e3;
+  font-size: 150% ;
+  border-radius: 8px;
+  border: 2px solid #737373;
+  margin-top: 10px;
 }
 
 footer {
