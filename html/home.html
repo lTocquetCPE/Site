@@ -1,69 +1,71 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8" />
-  <title>Voyage Bleu : Agence de voyage et excursion</title>
-  <link rel="stylesheet" href="../css/home.css" />
-</head>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Voyage Bleu : Agence de voyage et excursion</title>
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
 
-<body>
-  <header>
-    <a href="home.html">
-      <div class="headerButton">
-        <img
-          src="../ressources/home.png"
-          alt="Icone de retour à la page d'accueil"
-        />
-        Accueil
+  <body>
+    <header>
+      <a href="home.html">
+        <div class="headerButton">
+          <img
+            src="../ressources/home.png"
+            alt="Icone de retour à la page d'accueil"
+          />
+          Accueil
+        </div>
+      </a>
+      <div class="logoDiv">
+        <img src="../ressources/logo.png" alt="Logo de Voyage Bleu" />
       </div>
-    </a>
-    <div class="logoDiv">
-      <img src="../ressources/logo.png" alt="Logo de Voyage Bleu" />
-    </div>
-    <div class="rightHeaderButtons">
-      <a href="connexion.html">
-        <div class="headerButton">
-          <img src="../ressources/login.png" alt="Icone de connexion" />
-          Connexion
-        </div>
-      </a>
-      <a href="panier.html">
-        <div class="headerButton">
-          <img src="../ressources/panier.png" alt="Icone d'accès au panier" />
-          Panier
-        </div>
-      </a>
-    </div>
-  </header>
+      <div class="rightHeaderButtons">
+        <a href="connexion.html">
+          <div class="headerButton">
+            <img src="../ressources/login.png" alt="Icone de connexion" />
+            Connexion
+          </div>
+        </a>
+        <a href="panier.html">
+          <div class="headerButton">
+            <img src="../ressources/panier.png" alt="Icone d'accès au panier" />
+            Panier
+          </div>
+        </a>
+      </div>
+    </header>
 
-  <div class="home">
-    <div class="filtre">
-      <h3>Filtre :</h3><br />
-      <form>
-        Prix :
-        <input
-          type="range"
-          min="0"
-          max="1000"
-          class="slider"
-          name="rangePrix"
-        /><br />
-        Continent : <br />
-        <input type="radio" name="contient" value="europe" checked /> Europe
-        <br />
-        <input type="radio" name="contient" value="asie" checked /> Asie <br />
-        <input type="radio" name="contient" value="amerique" checked /> Amerique
-        <br />
-      </form>
+    <div class="home">
+      <div class="filtre">
+        <h3>Filtre :</h3><br />
+        <form>
+          Prix :
+          <input
+            type="range"
+            min="0"
+            max="1000"
+            class="slider"
+            name="rangePrix"
+          /><br />
+          Continent : <br />      
+          <input type="radio" name="contient" value="europe" checked /> Europe
+          <br />
+          <input type="radio" name="contient" value="asie" checked /> Asie <br />
+          <input type="radio" name="contient" value="amerique" checked /> Amerique
+          <br />
+        </form>
+      </div>
+    
     </div>
-   
-  </div>
-  <div id="destinations">  
-    </div>
+    <div id="destinations">  
+      </div>
 
 
-  <footer>
-    <img src="../ressources/logo.png" alt="" />
-    <a href="contactus.html">A propos & Contacts</a>
-  </footer>
-<script src="../js/home.js"></script>
-</body>
+    <footer>
+      <img src="../ressources/logo.png" alt="" />
+      <a href="contactus.html">A propos & Contacts</a>
+    </footer>
+    <script src="/js/home.js"></script>
+  </body>
+</html>
