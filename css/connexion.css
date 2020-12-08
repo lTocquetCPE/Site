@@ -15,10 +15,6 @@ header {
   text-align: center;
 }
 
-
-.logoDiv {
-}
-
 .logoDiv img {
   height: 100%;
   width: 180%;
@@ -45,7 +41,7 @@ header {
 .rightHeaderButtons {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: right;
 }
 body{
@@ -57,17 +53,48 @@ h1{
   text-align: center;
 }
 
+.form{
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  height: 20px;
+  border-radius: 6px;
+  margin-left: 40%;
+  margin-top: 0px;
+}
+
+h2{
+  color: #737373;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.button {
+  background-color: #fbf1e3;
+  font-size: 150% ;
+  border-radius: 8px;
+  border: 2px solid #737373;
+  margin-top: 10px;
+  margin-left: 46%;
+}
+
+.logoFoot{
+  width: 10%;
+  height: 100%;
+}
+
+h3{
+  color: #00c2cb;
+}
+
 footer {
-  text-decoration: none;
   width: 100%;
-  height: 350px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   border: 1px;
   background-color: #fbf1e3;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 50px;
 }
