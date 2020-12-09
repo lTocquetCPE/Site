@@ -39,20 +39,24 @@
     <div class="home">
       <div class="filtre">
         <h3>Filtre :</h3><br />
-        <form>
-          Prix :
+        <form name="filterForm">
+          <span id="priceFilterText">Prix : 1000</span>
           <input
             type="range"
             min="0"
             max="1000"
+            value="1000"
             class="slider"
             name="rangePrix"
           /><br />
-          Continent : <br />      
-          <input type="radio" name="contient" value="europe" checked /> Europe
+          Continent : <br />     
+          <input type="radio" name="regionRadios" value="all" checked /> Tous
+          <br /> 
+          <input type="radio" name="regionRadios" value="eu" /> Europe
           <br />
-          <input type="radio" name="contient" value="asie" checked /> Asie <br />
-          <input type="radio" name="contient" value="amerique" checked /> Amerique
+          <input type="radio" name="regionRadios" value="as" /> Asie <br />
+          <input type="radio" name="regionRadios" value="am" /> Amerique <br/>
+          <input type="radio" name="regionRadios" value="oc" /> Océanie
           <br />
         </form>
       </div>
