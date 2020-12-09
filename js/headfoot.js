@@ -1,7 +1,6 @@
 // Deux fonctions pour charger le header et le footer
 // Pour éviter de surcharger le html et le rendre plus lisible
 
-
 //Fontion ajoutant le header
 function AddHeader (){
     document.getElementById("myheader").innerHTML = WriteHeader()
