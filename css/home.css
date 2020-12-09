@@ -15,9 +15,6 @@ header {
   text-align: center;
 }
 
-.logoDiv {
-}
-
 .logoDiv img {
   height: 100%;
   width: 180%;
@@ -44,7 +41,7 @@ header {
 .rightHeaderButtons {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: right;
 }
 
@@ -103,34 +100,19 @@ span.destination:hover .reservez {
   opacity: 1;
 }
 
-footer {
-  text-decoration: none;
-  width: 100%;
-  height: 350px;
-  display: flex;
-  flex-direction: row;
-  border: 1px;
-  background-color: #fbf1e3;
-  box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  font-size: 30px;
-  margin-top: 50px;
+.logoFoot{
+  width: 10%;
+  height: 100%;
 }
 
-
-
 footer {
-  text-decoration: none;
   width: 100%;
-  height: 350px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   border: 1px;
   background-color: #fbf1e3;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 50px;
 }
