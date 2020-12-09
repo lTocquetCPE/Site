@@ -40,99 +40,76 @@
       <img src="/ressources/France.png" alt="destination" class="image" width=500 height=500/>
       <div class="reservez">
         <h2>Réservez</h2>
-      </div>
-    </div>
-  </span>
 
-  <span class="destination">
-    <h1>Angleterre</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Angleterre.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
-      </div>
-    </div>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Voyage Bleu : Agence de voyage et excursion</title>
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
 
-  </span>
-  <span class="destination">
-    <h1>Australie</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Australie.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
+  <body>
+    <header>
+      <a href="home.html">
+        <div class="headerButton">
+          <img
+            src="../ressources/home.png"
+            alt="Icone de retour à la page d'accueil"
+          />
+          Accueil
+        </div>
+      </a>
+      <div class="logoDiv">
+        <img src="../ressources/logo.png" alt="Logo de Voyage Bleu" />
       </div>
-    </div>
-  </span>
+      <div class="rightHeaderButtons">
+        <a href="connexion.html">
+          <div class="headerButton">
+            <img src="../ressources/login.png" alt="Icone de connexion" />
+            Connexion
+          </div>
+        </a>
+        <a href="panier.html">
+          <div class="headerButton">
+            <img src="../ressources/panier.png" alt="Icone d'accès au panier" />
+            Panier
+          </div>
+        </a>
+      </div>
+    </header>
 
-  <span class="destination">
-    <h1>Chine</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Chine.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
+    <div class="home">
+      <div class="filtre">
+        <h3>Filtre :</h3><br />
+        <form name="filterForm">
+          <span id="priceFilterText">Prix : 1000</span>
+          <input
+            type="range"
+            min="0"
+            max="1000"
+            value="1000"
+            class="slider"
+            name="rangePrix"
+          /><br />
+          Continent : <br />     
+          <input type="radio" name="regionRadios" value="all" checked /> Tous
+          <br /> 
+          <input type="radio" name="regionRadios" value="eu" /> Europe
+          <br />
+          <input type="radio" name="regionRadios" value="as" /> Asie <br />
+          <input type="radio" name="regionRadios" value="am" /> Amerique <br/>
+          <input type="radio" name="regionRadios" value="oc" /> Océanie
+          <br />
+        </form>
       </div>
+    
     </div>
-  </span>
-
-  <span class="destination">
-    <h1>Ecosse</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Ecosse.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
+    <div id="destinations">  
       </div>
-    </div>
-  </span>
-
-  <span class="destination">
-    <h1>Irlande</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Irlande.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
-      </div>
-    </div>
-  </span>
-
-  <span class="destination">
-    <h1>Japon</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Japon.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
-      </div>
-    </div>
-  </span>
-
-  <span class="destination">
-    <h1>Quebec</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Quebec.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
-      </div>
-    </div>
-  </span>
-
-  <span class="destination">
-    <h1>Yémen</h1>
-    <p>Température</p>
-    <div class="image">
-      <img src="/ressources/Yemen.jpg" alt="destination" width=500 height=500/>
-      <div class="reservez">
-        <h2>Réservez</h2>
-      </div>
-    </div>
-  </span>
 
   <footer id=myFooter></footer>
   <script type="text/javascript">AddFooter()</script>
 
-</body>
+    <script src="/js/home.js"></script>
+  </body>
+</html>
