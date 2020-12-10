@@ -85,7 +85,13 @@ let checkIfSubmittable = () =>{
     alert("Certains champs n'ont pas été remplis et doivent l'être pour valider la réservation :\n" + remainingFields);
     return false
   }
-    return true
+  if(destinationName == "Yémen")
+  {
+    alert("En ce moment, vous ne pouvez pas aller au Yémen. Il a été détecté que vous êtes analyste financier.")
+    return false
+  }
+  return true
+
 }
 
 let submitForm = () =>{
@@ -158,6 +164,20 @@ request.onreadystatechange = ()=> {
     document.getElementById("dinner").innerHTML = "Diner : " + (currentDestination.dinnerAvailable ?"Oui" : "Non") 
     document.getElementById("travelPic").src = "../ressources/" + currentDestination.pictureFileName
     document.forms.bookingForm.elements.adultsNb.max = currentDestination.adultsMax 
+
+
+    if(!currentDestination.animalsAllowed)
+    {
+      document.forms.bookingForm.elements.animalsNb.max = 0
+    }
+    if(!currentDestination.breakfastAvailable)
+    {
+      document.forms.bookingForm.elements.breakfast.disabled = true
+    }
+    if(!currentDestination.dinnerAvailable)
+    {
+      document.forms.bookingForm.elements.dinner.disabled = true
+    }
 
     displayPrice(currentDestination, document.forms.bookingForm)
 
