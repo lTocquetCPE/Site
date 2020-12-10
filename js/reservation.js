@@ -85,7 +85,11 @@ let checkIfSubmittable = () =>{
     alert("Certains champs n'ont pas été remplis et doivent l'être pour valider la réservation :\n" + remainingFields);
     return false
   }
-    return true
+  if(destinationName == "Yémen")
+  {
+    alert("En ce moment, vous ne pouvez pas aller au Yémen. Il a été détecté que vous êtes analyste financier.")
+  }
+    return false
 }
 
 let submitForm = () =>{
