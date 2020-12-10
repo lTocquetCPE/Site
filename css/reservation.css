@@ -58,7 +58,6 @@ body {
 
   margin: 15px;
   box-sizing: border-box;
-  font-size: 45px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -89,13 +88,13 @@ body {
 }
 .travelInfo h1 {
   line-height: 0;
-  font-size: 70px;
-}
-.travelInfo h2 {
   font-size: 45px;
 }
+.travelInfo h2 {
+  font-size: 25px;
+}
 .travelInfoTemperature {
-  font-size: 70px;
+  font-size: 45px;
   text-align: end;
   border: solid;
   margin: auto;
@@ -106,36 +105,36 @@ body {
 }
 
 .bookingDiv {
-  font-size: 150%; 
+  font-size: 150%;
 }
 
-input[type=text] {
+input[type="text"] {
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
   margin-left: 55px;
 }
 
-input[type=date] {
+input[type="date"] {
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
   height: 18px;
 }
 
-input[type=number]{
+input[type="number"] {
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
   height: 18px;
 }
 
-label{
+label {
   margin-left: 40px;
 }
 
-p{
+p {
   margin-left: 40px;
 }
 
-.priceDiv{
+.priceDiv {
   margin-left: 40px;
 }
 
@@ -159,12 +158,12 @@ p{
   text-align: center;
 }
 
-.logoFoot{
+.logoFoot {
   width: 10%;
   height: 100%;
 }
 
-h3{
+h3 {
   color: #00c2cb;
 }
 
