@@ -106,27 +106,56 @@ body {
 }
 
 .bookingDiv {
-  margin: 25px;
-  font-size: 25px;
+  font-size: 150%; 
+}
+
+input[type=text] {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  margin-left: 55px;
+}
+
+input[type=date] {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  height: 18px;
+}
+
+input[type=number]{
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  height: 18px;
+}
+
+label{
+  margin-left: 40px;
+}
+
+p{
+  margin-left: 40px;
+}
+
+.priceDiv{
+  margin-left: 40px;
 }
 
 .buttonsSpan button {
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 1000px;
   text-align: center;
-  font-size: 25px;
+  font-size: 150%;
   margin: auto;
   vertical-align: middle;
 
   margin: 15px;
   display: inline-block;
   box-sizing: border-box;
-  width: 300px;
-  font-size: 45px;
+  font-size: 150%;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fbf1e3;
+  border-radius: 8px;
+  border: 2px solid #737373;
   text-align: center;
 }
 
