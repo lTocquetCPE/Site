@@ -13,18 +13,19 @@
 
     <div class="coFrom">
         <h1>Connectez vous à votre espace personnel !</h1>
-        <form>
+        <form id="coForm">
             <label for="id"><h2>Identifiant :</h2></label><br/>
-            <input type="text" class="form" id="id" name="Identifiant"><br/>
+            <input type="text" class="form" id="id" name="username"><br/>
             <label for="mdp"><h2>Mot de passe :</h2></label><br/>
-            <input type="text" class="form" id="mdp" name="Motdepasse"><br/>
-            <div class="submitButton">
-                <button class="button">Connexion</button>
-            </div>
+            <input type="password" class="form" id="mdp" name="password"><br/>
         </form>
+        <div class="submitButton">
+            <button class="button" onclick="tryConnection()">Connexion</button>
+        </div>
     </div>
 
     <footer id="myFooter"></footer>
-    <script type="text/javascript">AddFooter()</script>  
+    <script type="text/javascript">AddFooter()</script>
+    <script type="text/javascript" src="../js/connexion.js"></script>
 
 </body>

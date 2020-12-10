@@ -30,19 +30,24 @@ let displayDestinations = (siteData) =>{
 
   document.getElementById("destinations").innerHTML = ""
   filteredDests.forEach((dest)=>{
-    //Un peu de babelJS :)
-    document.getElementById("destinations").innerHTML += `<span class="destination">
-        <h1>${dest.name}</h1>
-        <div id ="infoTemperature" class="travelInfoTemperature"></div>
-        <div class="image">
-        <a href="/html/reservation.html?dest=${ dest.name}">
-          <img src="/ressources/${ dest.pictureFileName}" alt="destination" class="image" width=500 height=500/>
-          <a/>
-          <div class="reservez">
-            <h2>Réservez</h2>
-          </div>
+
+    getDestinationTemperature(siteData, dest.name).then((temp) =>{
+      document.getElementById("destinations").innerHTML += `<span class="destination">
+      <h1>${dest.name}</h1>
+      <div id ="infoTemperature" class="travelInfoTemperature"></div>
+      ${temp.toFixed(1)}°C
+      <div class="image">
+      <a href="/html/reservation.html?dest=${ dest.name}">
+        <img src="/ressources/${ dest.pictureFileName}" alt="destination" class="image" width=500 height=500/>
+        <a/>
+        <div class="reservez">
+          <h2>Réservez</h2>
         </div>
-      </span>`
+      </div>
+    </span>`
+    })
+    
+
     })
   }
 
