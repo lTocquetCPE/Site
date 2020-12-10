@@ -1,0 +1,7 @@
+body {
+  background-color: deepskyblue;
+}
+
+a > path {
+  stroke: red;
+}
