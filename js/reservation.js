@@ -159,6 +159,20 @@ request.onreadystatechange = ()=> {
     document.getElementById("travelPic").src = "../ressources/" + currentDestination.pictureFileName
     document.forms.bookingForm.elements.adultsNb.max = currentDestination.adultsMax 
 
+
+    if(!currentDestination.animalsAllowed)
+    {
+      document.forms.bookingForm.elements.animalsNb.max = 0
+    }
+    if(!currentDestination.breakfastAvailable)
+    {
+      document.forms.bookingForm.elements.breakfast.disabled = true
+    }
+    if(!currentDestination.dinnerAvailable)
+    {
+      document.forms.bookingForm.elements.dinner.disabled = true
+    }
+
     displayPrice(currentDestination, document.forms.bookingForm)
 
 
