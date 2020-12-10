@@ -59,9 +59,36 @@ h2 {
 h3 {
   color: #737373;
 }
+
 p {
   color: #737373;
 }
+
+.filtre {
+  margin-left: 50px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 8px;
+  margin-left: 5%;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #00c2cb;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 .destination img {
   border-radius: 50%;
   object-fit: cover;

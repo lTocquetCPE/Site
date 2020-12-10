@@ -64,7 +64,7 @@ request.onreadystatechange = ()=> {
     })
     
     document.filterForm.rangePrix.onchange = ()=>{
-      document.getElementById("priceFilterText").innerHTML = "Prix : " + document.filterForm.rangePrix.value
+      document.getElementById("priceFilterText").innerHTML = "<p>Prix : " + document.filterForm.rangePrix.value +"</p>"
       displayDestinations(siteData)
     }
 
