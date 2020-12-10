@@ -38,7 +38,7 @@ let displayDestinations = (siteData) =>{
       ${temp.toFixed(1)}°C
       <div class="image">
       <a href="/html/reservation.html?dest=${ dest.name}">
-        <img src="/ressources/${ dest.pictureFileName}" alt="destination" class="image" width=500 height=500/>
+        <img src="/ressources/${ dest.pictureFileName}" alt="Photo de la destination" class="image" width=500 height=500/>
         <a/>
         <div class="reservez">
           <h2>Réservez</h2>
