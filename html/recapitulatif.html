@@ -42,23 +42,26 @@
             <div class="mainTravelInfoTop">
               <h1>Récapitulatif</h1>
             </div>
-            <div class="travelInfoTemperature">666°C</div>
+            <div id="infoTemperature" class="travelInfoTemperature">666°C</div>
           </div>
-          <h3>Destination : Japon</h3>
+          <h3 id="destinationTitle">Destination : Japon</h3>
+          <h3 id="reservationNumber">Numéro de réservation : </h3>
          
           <h3>Réservation:</h3>
           <ul>
-            <li>Nom : Valjean</li>
-            <li>Prénom : Jean</li>
-            <li>Adulte(s) : Pas plus de 6 sinon Macron viendra te tapper</li>
-            <li>Enfant(s) : 666</li>
-            <li>Numéro de téléphone : 0782223063</li>
-            <li>Date de départ : Demain</li>
-            <li>Date de retour : Hier</li>
-            <li>Pension : Petit déjeuner et goûter</li>
-            <li>Animaux : Verre de terre de compagnie</li>
+            <li id="clientFamilyName">Nom : Valjean</li>
+            <li id="clientName">Prénom : Jean</li>
+            <li id="adultsNb">Adulte(s) : Pas plus de 6 sinon Macron viendra te tapper</li>
+            <li id="childrenNb">Enfant(s) : 666</li>
+            <li id="phoneNumber">Numéro de téléphone : 0782223063</li>
+            <li id="departureDate">Date de départ : Demain</li>
+            <li id="endDate">Date de retour : Hier</li>
+            <li id="breakfast">Petit Déjeuner : Peut être</li>
+            <li id="dinner">Diner : Peut être</li>
+            <li id="animals">Animaux : Verre de terre de compagnie</li>
+            <li id="remarques">Remarques :</li>
           </ul>
-          <h2>Prix : un rein</h3>
+          <h2 id="price">Prix : un rein</h3>
         </div>
         <div class="travelInfoRightSide">
           <img src="../ressources/Japon.jpg"/>
@@ -69,5 +72,6 @@
       <img src="../ressources/logo.png" alt="" />
       <a href="contactus.html">A propos & Contacts</a>
     </footer>
+    <script type="text/javascript" src="../js/recapitulatif.js"></script>
   </body>
 </html>

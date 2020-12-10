@@ -40,35 +40,38 @@
         <div class="travelInfoLeftSide">
           <div class="mainTravelInfo">
             <div class="mainTravelInfoTop">
-              <h1>Nom de la destination</h1>
-              <h2>A partir de 666 euros</h2>
+              <h1 id="destinationName">Nom de la destination</h1>
+              <h2 id="pricePoint">A partir de 666 euros</h2>
             </div>
-            <div class="travelInfoTemperature">666°C</div>
+            <div id ="infoTemperature" class="travelInfoTemperature">666°C</div>
           </div>
           <h3>Description du voyage :</h3>
-          <p>
+          <p id="travelDescription">
             Partez vous reposer très très loin car vous avez besoin expressément
             de fuir vos responsabilités
           </p>
           <h3>Informations complémentaire :</h3>
           <ul>
-            <li>Disponibilité : Demain</li>
-            <li>Nombre de personnes : de 1 à 6 personnes</li>
-            <li>Animaux : autorisés</li>
-            <li>Pension : Repas du matin et du soir possibles</li>
+            <li id="availability">Disponibilité : Demain</li>
+            <li id="adultsMax">Nombre de personnes : 6 adultes max</li>
+            <li id="animalsAllowed">Animaux : autorisés</li>
+            <li id="breakfast">Petit-Dejeuner : Non</li>
+            <li id="dinner">Diner : Non</li>
           </ul>
         </div>
         <div class="travelInfoRightSide">
-          <img src="../ressources/Japon.jpg"/>
+          <img id="travelPic"src="../ressources/Japon.jpg"/>
         </div>
       </div>
-        <div class="bookingForm">
-          <form>
-            <label for="nom">Nom :</label><br />
-            <input type="text" id="nom" name="Nom" /><br />
-            <label for="prenom">Prénom :</label><br />
-            <input type="text" id="prénom" name="Prénom" /><br />
-            <label for="mail">E-mail :</label><br />
+        <div class="bookingDiv">
+          <form name="bookingForm" method="GET" action="recapitulatif.html">
+            <input type="hidden" name="destinationName" value="None" />
+            <input type="hidden" name="price" value="None" />
+            <label for="nom">Nom* :</label><br />
+            <input type="text" name="nom" /><br />
+            <label for="prenom">Prénom* :</label><br />
+            <input type="text" name="prenom"/><br />
+            <label for="mail">E-mail* :</label><br />
             <input type="text" id="mail" name="Mail" inputmode="email" /><br />
             <label for="tel">Numéro de téléphone :</label><br />
             <input
@@ -77,47 +80,48 @@
               name="Téléphone"
               inputmode="numeric"
             /><br />
-            <label for="departureDate">Date de départ :</label>
-            <input type="date" id="departureTime" name="Date de départ" />
-            <label for="endDate">Date de retour :</label>
-            <input type="date" id="endDate" name="Date de retour" /><br />
-            <label for="adultsNb">Nombre d'adultes :</label>
+            <label for="departureDate">Date de départ* :</label>
+            <input type="date" name="departureDate" value="2020-12-10" />
+            <label for="endDate">Date de retour* :</label>
+            <input type="date" name="endDate" value="2020-12-12" /><br />
+            <label for="adultsNb">Nombre d'adultes* :</label>
             <input
               type="number"
-              id="adultsNb"
-              name="Nombre d'adultes"
+              name="adultsNb"
               value="1"
+              min="1"
             />
-            <label for="childrenNb">Nombre d'enfants :</label>
+            <label for="childrenNb">Nombre d'enfants* :</label>
             <input
               type="number"
-              id="childrenNb"
-              name="Nombre d'enfants"
+              name="childrenNb"
               value="0"
+              min="0"
             /><br />
             <label for="breakfast">Petit Déjeuner :</label>
-            <input type="radio" id="breakfast" name="Petit Déjeuner" />
+            <input type="checkbox" name="breakfast" name="Petit Déjeuner" />
             <label for="Dinner">Dîner :</label>
-            <input type="radio" id="Dinner" name="Diner" /><br />
+            <input type="checkbox" id="Dinner" name="dinner" /><br />
             <label for="animalsNb">Animaux :</label>
             <input
               type="number"
               id="animalsNb"
-              name="Nombre d'Animaux"
+              name="animalsNb"
               value="0"
             /><br />
             <label for="remarks">Remarques :</label><br />
             <input type="text" id="remarks" name="Remarques" />
           </form>
+          <p>Les champs avec une étoile (*) sont obligatoires et doivent être remplis</p>
         </div>
         <div class="priceDiv">
-          <h1>Prix : 666 666 euros</h1>
+          <h1 id="priceDisplay">Prix : 666 666 euros</h1>
         </div>
         <span class="buttonsSpan">
           <span class="resetButton">
-            <button>Remettre à zéro</button>
+            <button onclick="resetForm()">Remettre à zéro</button>
           </span>
-          <span class="submitButton"><button>Valider</button></span>
+          <span class="submitButton"><button onclick="submitForm()">Valider</button></span>
         </span>
       </div>
     </div>
