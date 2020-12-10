@@ -77,7 +77,7 @@ request.onreadystatechange = ()=> {
     document.getElementById("price").innerHTML = "Prix : " + urlParams.get('price') + "€"
     document.getElementById("reservationNumber").innerHTML = "Numéro de réservation : " + (Math.random()*100000000).toFixed(0  )
     document.getElementById("remarques").innerHTML = "Remarques : " + (urlParams.get('Remarques') == ""? "Aucune" : urlParams.get('Remarques') )
-
+    document.getElementById("travelPic").src = "../ressources/" + currentDestination.pictureFileName
 
   }
 }
