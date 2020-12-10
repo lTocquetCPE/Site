@@ -88,8 +88,10 @@ let checkIfSubmittable = () =>{
   if(destinationName == "Yémen")
   {
     alert("En ce moment, vous ne pouvez pas aller au Yémen. Il a été détecté que vous êtes analyste financier.")
-  }
     return false
+  }
+  return true
+
 }
 
 let submitForm = () =>{
