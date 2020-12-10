@@ -24,7 +24,7 @@ let getCurrentDestination = (siteData, destinationName) =>{
 }
 
 let resetForm = () =>{
-  document.forms.bookingForm.reset()
+  document.forms.bookingForm.reset( )
 }
 
 let getDestinationTemperature = (siteData, currentDestination) =>{
