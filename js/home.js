@@ -1,6 +1,3 @@
-
-
-
 let displayDestinations = (siteData) =>{
 
   let regionRadios = document.filterForm.regionRadios
