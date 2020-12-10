@@ -35,7 +35,7 @@ let displayDestinations = (siteData) =>{
       document.getElementById("destinations").innerHTML += `<span class="destination">
       <h1>${dest.name}</h1>
       <div id ="infoTemperature" class="travelInfoTemperature"></div>
-      ${temp.toFixed(1)}°C
+      <h4>${temp.toFixed(1)}°C</h4>
       <div class="image">
       <a href="/html/reservation.html?dest=${ dest.name}">
         <img src="/ressources/${ dest.pictureFileName}" alt="Photo de la destination" class="image" width=500 height=500/>

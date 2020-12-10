@@ -51,6 +51,7 @@ body {
 h1 {
   color: #00c2cb;
   font-size: 50px;
+  margin-bottom: 0px;
 }
 h2 {
   color: black;
@@ -58,6 +59,13 @@ h2 {
 }
 h3 {
   color: #737373;
+}
+
+h4 {
+  color: #737373;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 p {
