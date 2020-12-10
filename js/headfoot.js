@@ -6,6 +6,17 @@ function AddHeader (){
     document.getElementById("myheader").innerHTML = WriteHeader()
 }
 
+let manageConnection = () =>{
+    if(localStorage.getItem("username") != null)
+    {
+        localStorage.clear()
+        location.reload()
+    }
+    else{
+        window.location.href = "../html/connexion.html";
+    }
+}
+
 //fonction écrivant le header
 function WriteHeader(){
     return '<a href="home.html">'
@@ -18,10 +29,10 @@ function WriteHeader(){
     +'<img src="../ressources/logo.png" alt="Logo de Voyage Bleu" />'
     +'</div>'
     +'<div class="rightHeaderButtons">'
-    +'<a href="connexion.html">'
+    +'<a onClick="manageConnection()">'
     +'<div class="headerButton">'
     +    '<img src="../ressources/login.png" alt="Icone de connexion" />'
-    +    'Connexion'
+    +    (localStorage.getItem("username") != null ? 'Bonjour ' + localStorage.getItem("username") + '</br> Déconnexion' :'Connexion')
     +  '</div>'
     +'</a>'
     +'<a href="panier.html">'
