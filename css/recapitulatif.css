@@ -45,50 +45,6 @@ header {
   justify-content: right;
 }
 
-a {
-  text-decoration: none;
-}
-
-header {
-  text-decoration: none;
-  width: 100%;
-  height: 350px;
-  display: flex;
-  flex-direction: row;
-  border: 1px;
-  border-style: solid;
-  background-color: #fbf1e3;
-}
-
-.logoDiv img {
-  height: 100%;
-  width: 180%;
-}
-
-.headerButton {
-  padding-right: 40px;
-  padding-left: 40px;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: none;
-  color: #00c2cb;
-}
-.headerButton img {
-  width: 150px;
-  height: 150px;
-}
-
-.rightHeaderButtons {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-}
 body {
   background-color: #fbf1e3;
 }
