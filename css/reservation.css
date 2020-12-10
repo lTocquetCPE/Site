@@ -44,21 +44,22 @@ header {
   flex-direction: row-reverse;
   justify-content: right;
 }
+
 body {
   background-color: #fbf1e3;
 }
+
 .travelInfo {
   display: grid;
-  border: solid;
+  border:  1px solid;
   border-radius: 10px;
   background-color: #d9fbfc;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 27px;
+  padding-bottom: 30px;
   font-size: 25px;
   margin: 25px;
-
-  margin: 15px;
   box-sizing: border-box;
-  padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -74,9 +75,11 @@ body {
 }
 
 .travelInfoRightSide img {
-  height: 1000px;
+  height: 100%;
   width: 100%;
-  padding: 15px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mainTravelInfo {
@@ -96,7 +99,6 @@ body {
 .travelInfoTemperature {
   font-size: 45px;
   text-align: end;
-  border: solid;
   margin: auto;
 }
 
